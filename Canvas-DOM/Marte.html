@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu peso en el lugar donde pesas menos</title>
+</head>
+
+<body>
+    <h1>Tu peso en otro planeta</h1>
+    <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+
+    <script>
+        var usuario = prompt("Cual es tu peso"); //prompt es para obtener datos introducidos por teclado
+        var peso = parseInt(usuario); //convierto a entero usuario y obtengo el valor  introducido por el 
+        var g_tierra = 9.8;
+        var g_marte = 3.7;
+        var g_jupiter = 24.8;
+
+        var peso_final;
+        peso_final = peso * g_marte / g_tierra;
+        peso_final = parseInt(peso_final); //paraInt para convertir a entero eliminar decimales
+
+        document.write("Tu peso en marte es <strong> " + peso_final + " kilos </strong>"); //document funciona similar al body con .write
+    </script>
+</body>
+
+</html>
