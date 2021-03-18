@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="javaScript" type="js" href="./select.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>hi</p>
+    <p>hello</p>
+    <p>hi</p>
+    <div id="demo">
+        <p>some text</p>
+        <p>some other text</p>
+    </div>
+
+    <!-- Para cambiar la dirrecion por js -->
+    <a href="http://www.example.com">Some link</a>
+
+<!-- para camnbiar el atrubuto de src -->
+    <img id="myimg" src="orange.png" alt="" />
+    <script>
+    var el = document.getElementById("myimg");
+    el.src = "apple.png";
+
+    </script>
+
+    <script>
+        var arr = document.getElementsByTagName("p");
+        for (var x = 0; x < arr.length; x++) {
+            arr[x].innerHTML = "Hi there";
+        }
+    </script>
+</body>
+
+</html>
